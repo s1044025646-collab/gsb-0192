@@ -1,0 +1,24 @@
+{
+  "name": "rna-folding-backend",
+  "version": "1.0.0",
+  "description": "教学用 RNA 无伪结折叠、最优结构计数与约束分析后端",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "rna-fold": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/tests/**/*.test.js\"",
+    "start": "npm run build && node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}

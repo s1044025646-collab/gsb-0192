@@ -1,0 +1,13 @@
+{
+  "sequence": "GAGAUU",
+  "listLimit": 10,
+  "scoring": {
+    "allowGU": true,
+    "minHairpin": 1,
+    "pairScores": {
+      "AU": 1,
+      "GC": 2,
+      "GU": 0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sequence": "AUAUAU",
+  "constraints": {
+    "forcedPairs": [[1, 4], [2, 5]]
+  },
+  "scoring": {
+    "minHairpin": 1
+  }
+}

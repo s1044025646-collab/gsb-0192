@@ -1,0 +1,19 @@
+{
+  "sourceId": "teaching-case-001",
+  "sequence": "GAGAUU",
+  "listLimit": 10,
+  "scoring": {
+    "allowGU": true,
+    "minHairpin": 1,
+    "pairScores": {
+      "AU": 1,
+      "GC": 2,
+      "GU": 0
+    }
+  },
+  "constraints": {
+    "unpaired": [],
+    "forbiddenPairs": [],
+    "forcedPairs": [[1, 6]]
+  }
+}

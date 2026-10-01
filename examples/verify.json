@@ -1,0 +1,16 @@
+{
+  "sequence": "GAGAUU",
+  "scoring": {
+    "allowGU": true,
+    "minHairpin": 1,
+    "pairScores": {
+      "AU": 1,
+      "GC": 2,
+      "GU": 0
+    }
+  },
+  "structure": {
+    "dotBracket": "((..))",
+    "pairs": [[1, 6], [2, 5]]
+  }
+}
