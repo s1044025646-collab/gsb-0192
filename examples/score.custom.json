@@ -1,0 +1,8 @@
+{
+  "gc": 5,
+  "au": 2,
+  "gu": 0,
+  "allowGU": false,
+  "minHairpin": 3,
+  "maxLength": 120
+}

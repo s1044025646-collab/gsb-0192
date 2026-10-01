@@ -1,0 +1,26 @@
+{
+  "name": "rna-fold-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "教学用单链 RNA 无伪结折叠与最优结构计数后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "rna": "dist/src/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server/index.js",
+    "build:run": "npm run build && npm start",
+    "dev": "node --no-warnings --experimental-strip-types src/server/index.ts",
+    "test": "npm run build && node --no-warnings --test --test-reporter=spec \"dist/src/**/*.test.js\"",
+    "demo": "npm run build && node --no-warnings dist/scripts/demo.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
